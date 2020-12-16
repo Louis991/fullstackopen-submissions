@@ -1,0 +1,16 @@
+title 0.5: Single page app
+
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: Status code 200, HTML content
+note over browser: HTML is read and main.css is requested
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: Status code 200, main.css
+note over browser: HTML is read and spa.js is requested
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: Status code 200, spa.js
+note over browser: spa.js is read and data.json is requested
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: Status code 200, data.json
+
+note over browser: Notes are displayed to the user

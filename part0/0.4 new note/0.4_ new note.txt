@@ -1,0 +1,10 @@
+title 0.4: new note
+
+browser->server: Chain of events described in https://fullstackopen.com/en/part0/fundamentals_of_web_apps#http-get
+server-->browser: ...
+note over browser: note text input is submitted through the form
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note, sends form data
+server-->browser: HTTP status code 302, Response header - location: /exampleapp/notes (redirect)
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: Chain of events described in https://fullstackopen.com/en/part0/fundamentals_of_web_apps#http-get
+browser->server: ...

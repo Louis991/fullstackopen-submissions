@@ -1,0 +1,8 @@
+title 0.6: New note
+
+browser->server: Chain of events from 0.5: Single page app
+server-->browser: ...
+note over browser: note text input is submitted through the form 
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa, {content: "test", date: "2020-12-16T14:03:42.791Z"}
+server-->browser: Status code 201 Created, {"message":"note created"}
+note over browser: notes are redrawn for the user
